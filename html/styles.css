@@ -248,10 +248,15 @@ main > section:nth-child(2) > div > div:first-child > p {
 /* Grid de Features */
 main > section:nth-child(2) footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px
-}
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
 
+}
+/* @media (min-width: 640px) {
+  main > section:nth-child(2) footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */
 /* Feature Cards */
 /* article {
   background-color: var(--card-bg);
@@ -306,5 +311,12 @@ article{
         height: 64px;
         padding: 16px;
     }
-}
 
+    p{
+        color: var(--text-muted);
+    }
+    h3{
+        font-weight: 500;
+    }
+
+}
