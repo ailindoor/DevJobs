@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js" defer></script><!-- type module espera a que el navegador cargue por completo la pagina y luego ejecuta el script -->
+    <title>Empleos</title>
+</head>
+
+<body>
+    <header>
+        <h2>DevJobs</h2>
+        <nav>
+            <a href="index.html">Buscar</a>
+            <a href="empleos.html">Empleos</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="salarios.html">Salarios</a>
+        </nav>
+        <div class="actions">
+            <a href="publicar.html">Subir CV</a>
+            <img src="/img/perfil.png" alt="User Icon" width="24" height="24" />
+        </div>
+    </header>
+    <main>
+        <section class="jobs-search">
+            <h1>Encuentra tu proximo trabajo</h1>
+            <p>Explora miles de opurtinades en el sector tecnologico</p>
+
+            <form role="search">
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input type="text" placeholder="Buscar por título, habilidades o empresa" />
+                </div>
+                <div class="search-filters">
+                    <select name="technology" id="technology">
+                        <option value="">Tecnologías</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>
+                        <option value="ruby">Ruby</option>
+                    </select>
+
+                    <select name="location" id="location">
+                        <option value="">Ubicaciones</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="onsite">On-site</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+
+                    <select name="type-of-contract" id="type-of-contract">
+                        <option value="">Tipos de Contrato</option>
+                        <option value="fulltime">Tiempo Completo</option>
+                        <option value="parttime">Medio Tiempo</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="internship">Pasantía</option>
+                    </select>
+
+                    <select name="experience-level" id="experience-level">
+                        <option value="">Nivel de Experiencia</option>
+                        <option value="junior">Junior</option>
+                        <option value="mid">Mid-level</option>
+                        <option value="senior">Senior</option>
+                        <option value="lead">Lead</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Resultado De Busqueda</h2>
+            <div class="jobs-listings">
+                <article class="job-listings-card">
+                    <div>
+                        <h3>Ingeniero de Software</h4>
+                            <small>Tech Solutions Inc. | Remoto</small>
+                            <p>Buscamos un Ingeniero de Software con experiencia en desarrollo web y conocimiento en
+                                JavaScript,
+                                HTML y CSS. Únete a nuestro equipo dinámico y trabaja en proyectos innovadores.</p>
+                            </p>
+                    </div>
+                    <button class="button-apply-job" id="boton-importante">Aplicar</button>
+                </article>
+                <article class="job-listings-card">
+                    <div>
+                        <h3>Ingeniero de Software</h3>
+                        <small>Tech Solutions Inc. | Ciudad de Mexico</small>
+                        <p>Buscamos un Ingeniero de Software con experiencia en desarrollo web y conocimiento en
+                            JavaScript,
+                            HTML y CSS. Únete a nuestro equipo dinámico y trabaja en proyectos innovadores.</p>
+                        </p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
+                <article class="job-listings-card">
+                    <div>
+                        <h3>Ingeniero de Software</h3>
+                        <small>Tech Solutions Inc. | Guadalajara</small>
+                        <p>Buscamos un Ingeniero de Software con experiencia en desarrollo web y conocimiento en
+                            JavaScript,
+                            HTML y CSS. Únete a nuestro equipo dinámico y trabaja en proyectos innovadores.</p>
+                        </p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
+                <article class="job-listings-card">
+                    <div>
+                        <h3>Ingeniero de Software</h3>
+                        <small>Tech Solutions Inc. | Remoto</small>
+                        <p>Buscamos un Ingeniero de Software con experiencia en desarrollo web y conocimiento en
+                            JavaScript,
+                            HTML y CSS. Únete a nuestro equipo dinámico y trabaja en proyectos innovadores.</p>
+                        </p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
+            </div>
+            <nav class="pagination">
+                <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 6l-6 6l6 6" />
+                    </svg></a>
+                <a class="is-active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" />
+                    </svg></a>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 DevJobs. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
